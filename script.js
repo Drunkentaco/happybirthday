@@ -156,15 +156,15 @@ function closeEndgameModal() {
 
 function setFinalMessage() {
   return playerScore > computerScore
-    ? (endgameMsg.textContent = 'You won! Clue: "CCSF 437"')
-    : (endgameMsg.textContent = 'You lost... www. meatspin .com')
+    ? (endgameMsg.textContent = 'You won! "CCSF 437"')
+    : (endgameMsg.textContent = 'You lost... Fuck You! 🖕')
 }
 
 function restartGame() {
   playerScore = 0
   computerScore = 0
   scoreInfo.textContent = 'Choose your weapon'
-  scoreMessage.textContent = "First to score 5 points wins the game. Win, you get a gift! Lose, I'll have to kill you!"
+  scoreMessage.textContent = "First to score 5 points wins the game. Win, you get your next clue! Lose, I'll have to kill you!"
   playerScorePara.textContent = 'Player: 0'
   computerScorePara.textContent = 'Computer: 0'
   playerSign.textContent = '❔'
